@@ -12,9 +12,9 @@ def parsing():
     print(f"time  : {finish - start:.2f} seconds")
 
     data = parser.data
-    # parser.save_data_to_json(data, "Asaxiy database")
+    parser.save_data_to_json(data, "Asaxiy database")
     parser.save_data_to_notion_database(data)
-    # parser.save_data_to_CSV(data, "Asaxiy database")
-    # parser.save_data_to_excel(data, "Asaxiy database")
+    parser.save_data_to_CSV(data, "Asaxiy database")
+    parser.save_data_to_excel(data, "Asaxiy database")
 
 parsing()
